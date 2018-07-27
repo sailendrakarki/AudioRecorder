@@ -4,104 +4,8 @@
 		"selected_items":
 		[
 			[
-				"src",
-				"source\t<source>"
-			],
-			[
-				"sty",
-				"style\t<style>"
-			],
-			[
-				"cal",
-				"calcsection"
-			],
-			[
-				"gul",
-				"gulpt\tgulp.task('name',function)"
-			],
-			[
-				"fun",
-				"function"
-			],
-			[
-				"gu",
-				"gulpt\tgulp.task('name',function)"
-			],
-			[
-				"gulp",
-				"gulps\tgulp.src('folder')"
-			],
-			[
-				"intro",
-				"introsteps"
-			],
-			[
-				"con",
-				"concat\t( strings_..: string ): string String"
-			],
-			[
-				"styl",
-				"style\tTag"
-			],
-			[
-				"into",
-				"introProfileClass"
-			],
-			[
-				"my",
-				"myfunctionpassword"
-			],
-			[
-				"getEl",
-				"getElementsByTagName\t( localName: DOMString ): HTMLCollection Element"
-			],
-			[
-				"div",
-				"divcollection"
-			],
-			[
-				"targe",
-				"targetElementId"
-			],
-			[
-				"tar",
-				"targetElementId"
-			],
-			[
-				"getel",
-				"getElementsByName\t( elementName: DOMString ): NodeList Document"
-			],
-			[
-				"getele",
-				"getElementById\t( elementId: DOMString ): Element Document"
-			],
-			[
-				"query",
-				"querySelector\t( selectors: DOMString ): Element Element"
-			],
-			[
-				"document",
-				"documentElement\t: Element Document"
-			],
-			[
-				"alert",
-				"alert"
-			],
-			[
-				"user",
-				"userinfo"
-			],
-			[
-				"J",
-				"JSON_parse\t( json: string ): any JSON"
-			],
-			[
-				"documen",
-				"Document\t(): Document Document"
-			],
-			[
-				"shippi",
-				"shippingData"
+				"ht",
+				"htdocs"
 			],
 			[
 				"wid",
@@ -138,6 +42,10 @@
 			[
 				"qua",
 				"quantityData"
+			],
+			[
+				"cal",
+				"calculator"
 			],
 			[
 				"calcu",
@@ -212,30 +120,6 @@
 		"selected_items":
 		[
 			[
-				"inst",
-				"Package Control: Install Package"
-			],
-			[
-				"Package Control: ins",
-				"Package Control: Install Package"
-			],
-			[
-				"debug",
-				"BracketHighlighter: Enable Debug Mode"
-			],
-			[
-				"Package Control: isnt",
-				"Package Control: Install Package"
-			],
-			[
-				"mater",
-				"Material Theme: Activate theme"
-			],
-			[
-				"insta",
-				"Package Control: Install Package"
-			],
-			[
 				"Package Control: instal",
 				"Package Control: Install Package"
 			],
@@ -245,6 +129,10 @@
 			],
 			[
 				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
 				"Package Control: Install Package"
 			],
 			[
@@ -280,10 +168,41 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/skarki/Desktop/audio"
+		"/C/Users/skarki/Desktop/voice"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/audio/index.html",
+		"/c/xampp/htdocs/audio/js/recorder.js",
+		"/C/xampp/htdocs/audio/audiorecord.sublime-project",
+		"/C/Users/skarki/Desktop/calculator/Calculator.html",
+		"/C/xampp/htdocs/audio/js/WebAudioRecorder.js",
+		"/C/xampp/htdocs/audio/WebAudioRecorder.js",
+		"/C/Users/skarki/Desktop/audio/index.html",
+		"/C/Users/skarki/Desktop/audio/WebAudioRecorder.js",
+		"/C/Users/skarki/Desktop/audio/js/recorder.js",
+		"/C/xampp/htdocs/audio/css/audio.css",
+		"/E/Myfile/calculator/js/jquery.abacus.min.js",
+		"/E/Myfile/calculator/Calculator.html",
+		"/C/Users/skarki/Desktop/calculator/Calculator.sublime-project",
+		"/C/Users/skarki/Desktop/calculator/jquery.calculator.css",
+		"/C/Users/skarki/Desktop/calculator/jquery.calculator.js",
+		"/C/Users/skarki/Desktop/calculator/jcalculator.css",
+		"/C/Users/skarki/Desktop/calculator/portion.html",
+		"/C/Program Files/Git/ReleaseNotes.html",
+		"/C/sublime/Data/Packages/Git/Git.sublime-settings",
+		"/C/Users/skarki/AppData/Local/Temp/Temp1_jquery.calculator.package-2.0.1 (1).zip/calculatorBasic.html",
+		"/C/Users/skarki/Documents/a",
+		"/C/sublime/Data/Packages/View In Browser/View In Browser.sublime-settings",
+		"/C/sublime/Data/Packages/User/View In Browser.sublime-settings",
+		"/C/sublime/Data/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/skarki/Desktop/calculator/finalcalc.html",
+		"/C/Users/skarki/Desktop/calculator/calculator-icon.png",
+		"/C/Users/skarki/Desktop/calculator/finalcalc",
+		"/C/Users/skarki/Desktop/knock1.html",
+		"/C/Users/skarki/Desktop/portion2.html",
+		"/C/Users/skarki/Desktop/portion.html",
+		"/C/Users/skarki/Desktop/calculator/keith.html"
 	],
 	"find":
 	{
@@ -291,7 +210,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 158.0,
+		"height": 0.0,
 		"where_history":
 		[
 		]
@@ -301,16 +220,38 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"input",
-			"_checkExternalClick",
-			"plugin._use",
-			"@U",
-			");\n",
-			"defaultKeys",
-			"Ent",
-			"13",
-			"USE",
-			"onClose"
+			"onGotAudioIn",
+			"audioInLevel",
+			"debugger",
+			"onEncoderLoading",
+			"encoding",
+			"debugger",
+			"timeLimit",
+			"reportInterval",
+			"encodingProcess",
+			"$bufferSize",
+			"$encoding",
+			"\"$encoding\"",
+			"$encoding",
+			"testToneLevel",
+			"$testToneLevel",
+			"$echocancellation",
+			"$echo-cancellation",
+			"%echo-cancellation",
+			"echo-cancellation",
+			"osc",
+			" $audioInSelect",
+			"audioInSelect",
+			"options",
+			"convert",
+			"();",
+			"self",
+			"loaddata",
+			"self",
+			"_mainDivClass",
+			"use",
+			"showformula",
+			"sampleProductCategories"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -318,6 +259,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"this"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -335,11 +277,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 70.0
+		"height": 30.0
 	},
 	"input":
 	{
-		"height": 69.0
+		"height": 68.0
 	},
 	"layout":
 	{
@@ -364,15 +306,7 @@
 		]
 	},
 	"menu_visible": true,
-	"output.exec":
-	{
-		"height": 332.0
-	},
 	"output.find_results":
-	{
-		"height": 0.0
-	},
-	"output.mdpopups":
 	{
 		"height": 0.0
 	},
@@ -380,7 +314,7 @@
 	"project": "audiorecord.sublime-project",
 	"replace":
 	{
-		"height": 58.0
+		"height": 56.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -418,7 +352,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 206.0,
+	"side_bar_width": 201.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
