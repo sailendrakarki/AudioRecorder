@@ -39,7 +39,7 @@
 
   $audioInLevel.attr('disabled', false);
 
-  $audioInLevel[0].valueAsNumber = 0;
+  $audioInLevel[0].valueAsNumber = 80;
 
   testTone = (function() {
     var lfo, osc, oscMod, output;
@@ -51,7 +51,7 @@
     osc.connect(oscMod);
     lfo.connect(oscMod.gain);
     output = audioContext.createGain();
-    output.gain.value = 0.5;
+    output.gain.value =1;
     oscMod.connect(output);
     osc.start();
     lfo.start();
@@ -61,7 +61,7 @@
   
   audioInLevel = audioContext.createGain();
 
-  audioInLevel.gain.value = 0;
+  audioInLevel.gain.value =($audioInLevel[0].valueAsNumber/100)*($audioInLevel[0].valueAsNumber/100);
 
   mixer = audioContext.createGain();
 
@@ -90,13 +90,14 @@
     var level;
     level = $audioInLevel[0].valueAsNumber / 100;
     audioInLevel.gain.value = level * level;
+    
   });
 
   onGotDevices = function(devInfos) {
     var index, info, name,nulloptions, options, _i, _len,k;
-   nulloptions="<option value='no-input' selected>(No input)</option>";
+    nulloptions="<option value='no-input' selected>(No input)</option>";
   
-    index = 0, k=0;
+    index = 0, k = 0;
     for (_i = 0, _len = devInfos.length; _i < _len; _i++) {
       info = devInfos[_i];
       if (info.kind !== 'audioinput') {
@@ -110,11 +111,11 @@
    
     if(k>0){
       options=options   
-      $audioInLevel.removeClass('d-none');
+      $audioInLevel.removeClass('hidden');
     }else {
       options=nulloptions;
-      $record.addClass('d-none');
-      $timeDisplay.addClass('d-none');
+      $record.addClass('hidden');
+      $timeDisplay.addClass('hidden');
     }
   
     $audioInSelect.html(options);
@@ -263,9 +264,6 @@
   
   encodingProcess = 'background';
 
-
-  
-
   defaultBufSz = (function() {
     var processor;
     processor = audioContext.createScriptProcessor(void 0, 2, 2);
@@ -290,8 +288,10 @@
     var html, time, url;
     time = new Date();
     url = URL.createObjectURL(blob);
-    html = ("<p recording='" + url + "'>") + ("<audio controls src='" + url + "'></audio> ") + ("(" + enc + ") " + (time.toString()) + " ") + ("<a class='btn btn-default' href='" + url + "' download='recording." + enc + "'>") + "Save..." + "</a> " + ("<button class='btn btn-danger' recording='" + url + "'>Delete</button>");
+  
+    html = ("<p recording='" + url + "'>") + ("<audio controls src='" + url + "'></audio> ") + ("<a class='btn btn-default' href='" + url + "' download='recording." + enc + "'>") + "Save..." + "</a> " + ("<button class='btn btn-danger' recording='" + url + "'>Delete</button>");
     "</p>";
+    
     $recordingList.prepend($(html));
   };
 
@@ -337,9 +337,9 @@
   };
 
   startRecording = function() {
-    $recording.removeClass('d-none');
-    $record.html('STOP');
-    $cancel.removeClass('d-none');
+    $timeDisplay.css('color','red');
+    $record.attr('src',"img/stopbtn.png");
+    $cancel.removeClass('hidden');
     disableControlsOnRecord(true);
     audioRecorder.setOptions({
       timeLimit: 60 * 60,
@@ -352,15 +352,14 @@
         bitRate: MP3_BIT_RATE[optionValue.mp3]
       }
     });
-
     audioRecorder.startRecording();
     setProgress(0);
   };
 
   stopRecording = function(finish) {
-    $recording.addClass('d-none');
-    $record.html('RECORD');
-    $cancel.addClass('d-none');
+    $timeDisplay.css('color','');
+    $record.attr('src',"img/recordicon.png");
+    $cancel.addClass('hidden');
     disableControlsOnRecord(false);
     if (finish) {
       audioRecorder.finishRecording();

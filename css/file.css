@@ -1,0 +1,21 @@
+
+.voicebox{
+	border: 2px solid black;
+	margin: 20px;
+	padding: 12px;
+}
+
+.imghigwidth{
+	height: 42px;
+	width: 70px;
+}
+
+#imghiwidthdiv{
+	padding-left: 55px;
+}
+#time-displaydiv{
+	padding-left: 27px;
+}
+.textlistener{
+	padding: 150px
+}

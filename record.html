@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Record Page</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/file.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 textlistener">
+				<label>sailendra</label>
+				<a href="#" onClick="document.getElementById('audio_play').play(); return false;"><img src="img/speaker.png" alt="speaker" height="20px"></a>
+				<a href="index.html" ><img src="img/smallrecordicon.png" alt="speaker" height="20px"></a>
+			</div>
+
+			<audio id="audio_play">
+				<source src="js/recording.wav" type="audio/ogg" />
+			</audio>
+		</div>
+	</div>
+</body>
